@@ -6,14 +6,14 @@ In this workshop, you will get hands-on experience with the open source framewor
 
 # Pre-requisites
 
-## 1. Accounts
+## 1. Accounts 🎫
 
 * **Dynatrace** - Create an account for a [free trial Dynatrace SaaS tenant](https://www.dynatrace.com/trial) and create a PaaS and API token. See details in the [Keptn docs](https://keptn.sh/docs/0.5.0/reference/monitoring/dynatrace/).
 * **(recommended:) GCP account** - A GCP account is suggested to utilize the Google Cloud Shell. It is recommended to sign up for personal free trial to have full admin rights and to not cause any issues with your enterprise account. We will only use the free tier of the Google Cloud shell in the course of this workshop. The below link can be used to sign up for a free trial:
    * [Google](https://cloud.google.com/free/)
 
 
-## 2. Tools
+## 2. Tools 🛠️
 
 In this workshop, we are providing two options that will have all the required tools installed. 
 
@@ -65,9 +65,7 @@ TODO 1. Setup the cluster or connection to the cluster.
     ```  
 
 
-# Install Keptn
-
-
+# Install Keptn ⚙️
 
 ## 1) Install Keptn
 
@@ -160,7 +158,7 @@ This will install the Dynatrace OneAgent Operator into your cluster.
 
 1. Navigate to the `dynatrace-service` folder: 
     ```console
-    cd /usr/keptn/dynatrace-service/deploy/scripts
+    cd /usr/keptn/scripts/dynatrace-service/deploy/scripts
     ```
 1. Define your credentials.
     ```console
@@ -195,7 +193,7 @@ In the default installation of Keptn, the bridge is only accessible via `kubectl
     <img src="images/bridge-empty.png" width="500"/>
 
 
-# Hands-on Labs
+# Hands-on Labs 👩‍💻👨‍💻
 
 After installing Keptn, we are now ready to explore to execute the following hands-on labs. They are based on each other, why it is important to complete them according to this order:
 
@@ -204,7 +202,7 @@ After installing Keptn, we are now ready to explore to execute the following han
 1. Introducing quality gates: [Lab](./03_Introducing_quality_gates)
 1. Self-healing with Keptn: [Lab](./04_Self_Healing)
 
-# Keptn Community
+# Keptn Community 📢
 
 Join the Keptn community!
 
