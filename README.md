@@ -2,15 +2,14 @@
 
 # Overview
 In this workshop, you will get hands-on experience with the open source framework [Keptn](https://keptn.sh) and see how it can help you to manage your cloud-native applications on Kubernetes.
-
+There is no need to install any software on your local machine, instead we will use cloud resources for the course of this workshop.
 
 # Pre-requisites
 
 ## 1. Accounts 🎫
 
-* **Dynatrace** - Create an account for a [free trial Dynatrace SaaS tenant](https://www.dynatrace.com/trial) and create a PaaS and API token. See details in the [Keptn docs](https://keptn.sh/docs/0.5.0/reference/monitoring/dynatrace/).
-* **(recommended:) GCP account** - A GCP account is suggested to utilize the Google Cloud Shell. It is recommended to sign up for personal free trial to have full admin rights and to not cause any issues with your enterprise account. We will only use the free tier of the Google Cloud shell in the course of this workshop. The below link can be used to sign up for a free trial:
-   * [Google](https://cloud.google.com/free/)
+* **Dynatrace** - We will use Dynatrace to monitor our cluster as well as all our sample application. Therefore, create an account for a [free trial Dynatrace SaaS tenant](https://www.dynatrace.com/trial). See details in the [Keptn docs](https://keptn.sh/docs/0.5.0/reference/monitoring/dynatrace/).
+* **(recommended:) GCP account** - A GCP account is suggested to utilize the Google Cloud Shell. It is recommended to sign up for personal free trial to have full admin rights and to not cause any issues with your enterprise account. Google Cloud Shell is free to use with an GCP account, [more information here](https://cloud.google.com/free/docs/gcp-free-tier). Use this link to sign up for a free trial: https://cloud.google.com/free/
 
 
 ## 2. Tools 🛠️
@@ -119,6 +118,8 @@ wait-service-deployment-distributor-fdcf99f67-g7jl9               1/1     Runnin
 </details>
 
 ## 2) Collect tokens for Dynatrace
+
+1. Make sure you have followed the prerequisites and have a Dynatrace tenant ready. If not, please sign up for a [free Dynatrace trial](https://www.dynatrace.com/trial). There is no need to install anything on your local machine. For now, just make sure you have created your tenant.
 
 1. To be able to connect a Dynatrace tenant to the cluster, we will need an API as well as an Platform as a Service (PaaS) token from the Dynatrace tenant.
 We recommend creating a temporary file and copying the following lines into an editor, fill them out and keep them as a reference for later:
