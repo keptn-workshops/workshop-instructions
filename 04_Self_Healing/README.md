@@ -6,9 +6,10 @@ In this use case you will learn how to use the capabilities of Keptn to provide 
 
 ## Prerequisites
 A couple of specifications files are needed for Keptn to actually know which remediation to perofrm and to verify if the executed remediation was successful.
-These files have already put in your Docker container.
 
-## Configure keptn
+Please that as of now, this tutorial only works out of the box with Prometheus as the tool for monitoring your cluster. Support for Dynatrace will follow.
+
+## Configure Keptn
 
 In order for keptn to utilize Prometheus metrics to support self-healing, the configured Service Indicators, Service Objectives and Remediation steps need to be updated. 
 
@@ -55,7 +56,7 @@ In order to simulate user traffic that is causing an unhealthy behavior in the c
 1. Move to the correct folder:
 
     ```console
-    cd /usr/keptn/examples/load-generation/bin
+    cd /usr/keptn/load-generation/bin
     ```
 
 1. Execute the load generation program:
