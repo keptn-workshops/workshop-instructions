@@ -56,12 +56,25 @@ Make sure you have decided for one option before proceeding.
 
     This will download the Docker image (either to your local machine or your Cloud Shell) and will put you inside the Docker container once downloaded. All files needed for the workshop are already prepared for you inside this docker container.
 
-TODO 1. Setup the cluster or connection to the cluster.
+1. Setup the Kubernetes cluster or connection to the cluster.
 
-1. Fetch the necessary configuration context for `kubectl`:
+- Setting up the actual cluster is out of scope of this workshop. Please find instructions for creating the cluster on the Keptn website itself https://keptn.sh/docs/0.5.0/installation/setup-keptn/#setup-kubernetes-cluster 
+
+
+- Make sure that the `kubectl` tool is pointed to the right cluster.
     ```console
+    kubectl config current-context
+    ```
+    That should give you the name of the cluster you want to install Keptn on. If not, please follow the instructions of your Cloud provider platform to connect to the cluster.
+
+    <details><summary>Example for GKE</summary>
+    For GKE, you could execute this command:
     
-    ```  
+    ```console
+    gcloud container clusters get-credentials CLUSTERNAME --zone ZONE --project PROJECTNAME
+    ```
+    </details>
+
 
 
 # Install Keptn ⚙️
