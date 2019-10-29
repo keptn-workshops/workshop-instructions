@@ -147,7 +147,7 @@ We recommend creating a temporary file and copying the following lines into an e
 
     Copy it to your temporary file to keep it for later.
 
-1. To retrieve the API and PaaS Token, login to your Dynatrace tenant and navigate in the left-hand menu to **Settings -> Integration -> Dyantrace API** and click on **Generate token**. Provide a name, e.g., **keptn-token** and make sure to create a token with the following permissions:
+1. To retrieve the API and PaaS Token, login to your Dynatrace tenant and navigate in the left-hand menu to **Settings -> Integration -> Dynatrace API** and click on **Generate token**. Provide a name, e.g., **keptn-token** and make sure to create a token with the following permissions:
     <details><summary>Open for permissions</summary>
     
     - Access problem and event feed, metrics and topology
