@@ -24,7 +24,7 @@ In this workshop, we are providing two options that will have all the required t
         <img src="images/cloud_shell.png" width="100%"/>
 
 
-* **Option B: Run Docker from your machine host** - If you have Docker installed on your local machine, you can simply start and connect to the Docker container locally. Open a Shell/Bash/Terminal to be ready to proceed.
+* **Option B: Run Docker from your local machine** - If you have Docker installed on your local machine, you can simply start and connect to the Docker container locally. Open a Shell/Bash/Terminal to be ready to proceed.
 
 Make sure you have decided for one option before proceeding.
 
