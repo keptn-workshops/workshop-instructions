@@ -5,9 +5,9 @@
 In this use case you will learn how to use the capabilities of Keptn to provide self-healing for an application without modifying any of the applications code. The use case presented in the following will scale up the pods of an application if the application undergoes heavy CPU saturation.
 
 ## Prerequisites
-A couple of specifications files are needed for Keptn to actually know which remediation to perofrm and to verify if the executed remediation was successful.
+A couple of specifications files are needed for Keptn to actually know which remediation to perform and to verify if the executed remediation was successful.
 
-Please that as of now, this tutorial only works out of the box with Prometheus as the tool for monitoring your cluster. Support for Dynatrace will follow.
+Please know that as of now, this tutorial only works out of the box with Prometheus as the tool for monitoring your cluster. Support for Dynatrace will follow.
 
 ## Configure Keptn
 
@@ -45,7 +45,7 @@ In order for keptn to utilize Prometheus metrics to support self-healing, the co
 
 ## Run the use case
 
-### Deploy and unhealthy version of the carts service
+### Deploy an unhealthy version of the carts service
 
 Tests can never capture all issues a service might undergo in a production environment. As we will see, our _carts_ microservice is already running in our production environment hence it will cause some issues. This is due to the fact that real-user traffic is different than synthetic test traffic and we might not be able to test all real-user actions in our test phase.
 
