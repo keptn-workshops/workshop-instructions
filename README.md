@@ -170,6 +170,11 @@ We recommend creating a temporary file and copying the following lines into an e
 
 This will install the Dynatrace OneAgent Operator into your cluster.
 
+1. Create a role binding to grant your GKE user a cluster-admin before you can create the role necessary for the OneAgent Operator in later steps.
+    ```console
+    kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --user=$(gcloud config get-value account)
+    ```
+
 1. Navigate to the `dynatrace-service` folder: 
     ```console
     cd /usr/keptn/scripts/dynatrace-service/deploy/scripts
