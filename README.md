@@ -32,7 +32,7 @@ Make sure you have decided for one option before proceeding.
 1. To start the docker container you will use for this workshop, please execute:
 
     ```console
-    docker run -it keptnworkshops/workshop-utils-gke:0.5.0 /bin/bash
+    docker run -dt --name keptn-workshop keptnworkshops/workshop-utils-gke:0.5.0
     ```
 
     <details><summary>Instructions for other platforms</summary>
@@ -40,19 +40,24 @@ Make sure you have decided for one option before proceeding.
     
     - GKE
         ```console
-        docker run -it keptnworkshops/workshop-utils-gke:0.5.0 /bin/bash
+        docker run -dt --name keptn-workshop keptnworkshops/workshop-utils-gke:0.5.0
         ``` 
 
     - AKS
         ```console
-        docker run -it keptnworkshops/workshop-utils-aks:0.5.0 /bin/bash
+        docker run -dt --name keptn-workshop keptnworkshops/workshop-utils-aks:0.5.0
         ``` 
 
     - EKS
         ```console
-        docker run -it keptnworkshops/workshop-utils-eks:0.5.0 /bin/bash
+        docker run -dt --name keptn-workshop keptnworkshops/workshop-utils-eks:0.5.0
         ``` 
     </details>
+    
+    Then, connect to the Docker container.
+    ```console
+   docker exec -it keptn-workshop /bin/bash
+    ```
 
     This will download the Docker image (either to your local machine or your Cloud Shell) and will put you inside the Docker container once downloaded. All files needed for the workshop are already prepared for you inside this docker container.
 
