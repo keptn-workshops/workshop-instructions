@@ -1,3 +1,5 @@
+# 🚨 PLEASE NOTE this repository has been archived and is not maintained anymore. You find the latest install installations on our official website https://keptn.sh 
+
 # Keptn Workshop Instructions
 
 # Overview
